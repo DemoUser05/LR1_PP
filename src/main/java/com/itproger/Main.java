@@ -5,22 +5,21 @@ class LucasNumber {
     public int n;      // Номер числа Люка
     public int value;  // Значення числа Люка
 
-    // Конструктор, який ініціалізує n і обчислює відповідне число Люка
+    // Конструктор
     public LucasNumber(int n) {
         this.n = n;
         this.value = calculateLucasNumber(n);
     }
 
-    // Метод для обчислення числа Люка тільки для N <= 0
+    // Метод для обчислення числа Люка для N <= 0
     private int calculateLucasNumber(int n) {
-        if (n == 0) return 2;  // L(0) = 2
-        if (n == -1) return 1;  // L(-1) = 1
+        if (n == 0) return 2;    // L(0) = 2
+        if (n == -1) return -1;  // L(-1) = -1
 
-        // Якщо N від'ємне, використовуємо формулу L(-n) = (-1)^n * L(n)
-        // Оскільки n від'ємне, ми використовуємо тільки формулу для від'ємних індексів
+        // Використовуємо формулу для від'ємних індексів L(-n) = (-1)^n * L(n)
         n = Math.abs(n);  // Беремо абсолютне значення N
-        int prev = 2;     // L(0)
-        int curr = 1;     // L(1)
+        int prev = 2;
+        int curr = 1;
         int next;
 
         for (int i = 2; i <= n; i++) {
@@ -30,7 +29,7 @@ class LucasNumber {
         }
 
         // Для від'ємних індексів: L(-n) = (-1)^n * L(n)
-        return (n % 2 == 0) ? curr : -curr;  // Якщо n парне, результат позитивний, інакше негативний
+        return (n % 2 == 0) ? curr : -curr;  // Якщо n парне, результат додатний, інакше від'ємний
     }
 
     // Метод для отримання обчисленого значення числа Люка
@@ -42,8 +41,10 @@ class LucasNumber {
     public int getNumber() {
         return n;
     }
+}
 
-    // Головна функція для запуску програми
+// Головна функція для запуску програми
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -55,8 +56,10 @@ class LucasNumber {
         if (n > 0) {
             System.out.println("Помилка: N повинно бути менше або дорівнювати нулю!");
         } else {
-            LucasNumber lucas = new LucasNumber(n);
-            System.out.println("N-е число Люка для N = " + lucas.getNumber() + " : " + lucas.getValue());
+            LucasNumber number = new LucasNumber(n);
+            System.out.println("N-е число Люка для N = " + number.getNumber() + " є " + number.getValue());
         }
     }
 }
+
+
