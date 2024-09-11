@@ -2,60 +2,61 @@ package com.itproger;
 import java.util.Scanner;
 
 class LucasNumber {
-    private int N;
-    private int value;
+    public int n;      // Номер числа Люка
+    public int value;  // Значення числа Люка
 
-    //Конструктор
-    public LucasNumber(int N) {
-        this.N = N;
-        this.value = calculateLucasNumber(N);
+    // Конструктор, який ініціалізує n і обчислює відповідне число Люка
+    public LucasNumber(int n) {
+        this.n = n;
+        this.value = calculateLucasNumber(n);
     }
 
-    // Метод для обчислення числа Люка за індексом
-    private int calculateLucasNumber(int N) {
-        if(N == 0) return 2;
-        if(N == 1) return 1;
+    // Метод для обчислення числа Люка тільки для N <= 0
+    private int calculateLucasNumber(int n) {
+        if (n == 0) return 2;  // L(0) = 2
+        if (n == -1) return 1;  // L(-1) = 1
 
-        int prev = 2;
-        int curr = 1;
-        int next = 0;
+        // Якщо N від'ємне, використовуємо формулу L(-n) = (-1)^n * L(n)
+        // Оскільки n від'ємне, ми використовуємо тільки формулу для від'ємних індексів
+        n = Math.abs(n);  // Беремо абсолютне значення N
+        int prev = 2;     // L(0)
+        int curr = 1;     // L(1)
+        int next;
 
-        for(int i = 2; i<=N; i++) {
+        for (int i = 2; i <= n; i++) {
             next = prev + curr;
             prev = curr;
             curr = next;
         }
-        return curr;
+
+        // Для від'ємних індексів: L(-n) = (-1)^n * L(n)
+        return (n % 2 == 0) ? curr : -curr;  // Якщо n парне, результат позитивний, інакше негативний
     }
-    // Метод для отримання значення числа Люка
+
+    // Метод для отримання обчисленого значення числа Люка
     public int getValue() {
         return value;
     }
 
-    // Метод для отримання значення числа Люка
+    // Метод для отримання номера числа Люка
     public int getNumber() {
-        return N;
+        return n;
     }
-}
 
-public class Main {
+    // Головна функція для запуску програми
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //Введення номеру числа Люка
-        System.out.print("Введіть номер число Люка (N): ");
-        int N = scanner.nextInt();
+        // Введення користувачем номера числа Люка (N)
+        System.out.print("Введіть номер числа Люка (N ≤ 0): ");
+        int n = scanner.nextInt();
 
-        // Перевіряємо коректність введеного числа
-        if(N < 0) {
-            System.out.println("Помилка. Число N має бути більше або дорівнювати 0.");
-            return;
+        // Перевірка на допустимий діапазон N
+        if (n > 0) {
+            System.out.println("Помилка: N повинно бути менше або дорівнювати нулю!");
+        } else {
+            LucasNumber lucas = new LucasNumber(n);
+            System.out.println("N-е число Люка для N = " + lucas.getNumber() + " : " + lucas.getValue());
         }
-
-        // Створюємо об'єкт класу LucasNumber
-        LucasNumber number = new LucasNumber(N);
-
-        //Виведення результату
-        System.out.println("N-е число Люка для N = " + number.getNumber() + " є " + number.getValue());
     }
 }
