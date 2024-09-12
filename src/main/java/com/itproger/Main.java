@@ -1,17 +1,27 @@
 package com.itproger;
 import java.util.Scanner;
 
+/**
+ *  Клас LucasNumber призначений для обчислення чисел Люка для заданого індексу N
+ */
 class LucasNumber {
     public int n;      // Номер числа Люка
     public int value;  // Значення числа Люка
 
-    // Конструктор
+    /**
+     * Конструктор
+     * @param n  Індекс N, для якого потрібно обчислити число Люка
+     */
     public LucasNumber(int n) {
         this.n = n;
         this.value = calculateLucasNumber(n);
     }
 
-    // Метод для обчислення числа Люка для N <= 0
+    /**
+     * Метод для обчислення числа Люка для N <= 0
+     * @param n Введений індекс N
+     * @return Значення числа Люка для даного N
+     */
     private int calculateLucasNumber(int n) {
         if (n == 0) return 2;    // L(0) = 2
         if (n == -1) return -1;  // L(-1) = -1
@@ -28,22 +38,30 @@ class LucasNumber {
             curr = next;
         }
 
-        // Для від'ємних індексів: L(-n) = (-1)^n * L(n)
         return (n % 2 == 0) ? curr : -curr;  // Якщо n парне, результат додатний, інакше від'ємний
     }
 
-    // Метод для отримання обчисленого значення числа Люка
+    /**
+     * Метод для отримання обчисленого значення числа Люка
+     * @return Значення числа Люка для даного N
+     */
     public int getValue() {
         return value;
     }
 
-    // Метод для отримання номера числа Люка
+    /**
+     * Метод для отримання номера числа Люка
+     * @return Номер числа Люка
+     */
     public int getNumber() {
         return n;
     }
 }
 
-// Головна функція для запуску програми
+/**
+ * Головна функція для запуску програми
+ */
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
