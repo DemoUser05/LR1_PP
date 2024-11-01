@@ -1,4 +1,4 @@
-/*import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 import model.Track;
 import model.TrackManager;
 import org.junit.jupiter.api.BeforeEach;
@@ -33,4 +33,4 @@ class DisplayTracksCommandTest {
         assertTrue(output.contains("Track 1"));
         assertTrue(output.contains("Track 2"));
     }
-}*/
+}

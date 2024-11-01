@@ -1,4 +1,4 @@
-/*import model.Track;
+import model.Track;
 import model.TrackManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -25,4 +25,4 @@ class SortTracksByStyleCommandTest {
         assertEquals("Jazz", trackManager.getTracks().get(0).getStyle());
         assertEquals("Rock", trackManager.getTracks().get(1).getStyle());
     }
-}*/
+}

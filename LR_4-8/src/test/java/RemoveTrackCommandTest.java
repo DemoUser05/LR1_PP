@@ -1,4 +1,4 @@
-/*import model.Track;
+import model.Track;
 import model.TrackManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,4 +27,4 @@ class RemoveTrackCommandTest {
         removeTrackCommand.execute();
         assertEquals(0, trackManager.getTracks().size());
     }
-}*/
+}

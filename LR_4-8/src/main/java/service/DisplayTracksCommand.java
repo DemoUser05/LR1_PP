@@ -15,3 +15,5 @@ public class DisplayTracksCommand implements Command {
         trackManager.displayTracks(trackManager.searchByDuration(0, Double.MAX_VALUE));
     }
 }
+
+

@@ -1,4 +1,4 @@
-/*import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 import model.TrackManager;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,7 +16,6 @@ class SaveCompilationCommandTest {
     @BeforeEach
     void setUp() {
         trackManager = new TrackManager();
-        // Використання Scanner з InputStream для емуляції введення з консолі або файлу
         Scanner scanner = new Scanner(new ByteArrayInputStream("compilation.txt".getBytes()));
         saveCompilationCommand = new SaveCompilationCommand(trackManager, scanner);
     }
@@ -26,6 +25,6 @@ class SaveCompilationCommandTest {
         saveCompilationCommand.execute();
         // Додайте перевірки, щоб переконатися, що треки збережені правильно
     }
-}*/
+}
 
 

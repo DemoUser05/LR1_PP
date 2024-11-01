@@ -1,0 +1,35 @@
+<Configuration status="WARN">
+    <Appenders>
+        <File name="FileLogger" fileName="logs/app.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level: %msg%n%throwable"/>
+        </File>
+
+        <SMTP name="EmailLogger" subject="Critical Error in Application"
+              to="diana-marta.lopska.oi.2023@lpnu.ua"
+              from="diana-marta.lopska.oi.2023@lpnu.ua"
+              smtpHost="smtp.gmail.com"
+              smtpPort="465"
+              smtpUsername="diana-marta.lopska.oi.2023@lpnu.ua"
+              smtpPassword="pyhz znsn hwug ppob"
+              smtpProtocol="smtps"
+              bufferSize="1"
+              ignoreExceptions="false">
+            <Property name="mail.smtp.ssl.enable">true</Property>
+            <Property name="mail.smtp.auth">true</Property>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %msg%n%throwable"/>
+            <Filters>
+                <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </SMTP>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="FileLogger"/>
+        </Root>
+        <Logger name="ErrorLogger" level="error" additivity="false">
+            <AppenderRef ref="FileLogger"/>
+            <AppenderRef ref="EmailLogger"/>
+        </Logger>
+    </Loggers>
+</Configuration>

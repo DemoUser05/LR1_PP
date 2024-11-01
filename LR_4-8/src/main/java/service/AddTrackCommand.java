@@ -28,4 +28,3 @@ public class AddTrackCommand implements Command {
         System.out.println("Track added successfully.");
     }
 }
-

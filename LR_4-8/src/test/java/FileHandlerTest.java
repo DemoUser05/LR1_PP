@@ -1,4 +1,4 @@
-/*import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 import model.Track;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -25,7 +25,7 @@ class FileHandlerTest {
     void testSaveToFile() {
         fileHandler.saveToFile(tracks, "test_tracks.txt");
         File file = new File("test_tracks.txt");
-        assertTrue(file.exists());
+        assertTrue(file.exists());   //чи файл був успішно створений
     }
 
     @Test
@@ -36,4 +36,4 @@ class FileHandlerTest {
         assertEquals(2, loadedTracks.size());
         assertEquals("Track 1", loadedTracks.get(0).getName());
     }
-}*/
+}
