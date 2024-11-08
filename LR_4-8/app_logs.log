@@ -1,0 +1,454 @@
+лист. 05, 2024 5:57:46 ПП service.AddTrackCommand execute
+SEVERE: Error adding track
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:26)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:72)
+	at main.Main.run(Main.java:51)
+	at main.Main.main(Main.java:15)
+
+лист. 05, 2024 5:57:46 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.lang.ClassCastException: class com.sun.mail.handlers.text_plain cannot be cast to class javax.activation.DataContentHandler (com.sun.mail.handlers.text_plain and javax.activation.DataContentHandler are in unnamed module of loader 'app')
+	at javax.activation.MailcapCommandMap.getDataContentHandler(MailcapCommandMap.java:596)
+	at javax.activation.MailcapCommandMap.createDataContentHandler(MailcapCommandMap.java:550)
+	at javax.activation.DataHandler.getDataContentHandler(DataHandler.java:611)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:315)
+	at javax.mail.internet.MimeUtility.getEncoding(MimeUtility.java:340)
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1575)
+	at javax.mail.internet.MimeMessage.updateHeaders(MimeMessage.java:2271)
+	at javax.mail.internet.MimeMessage.saveChanges(MimeMessage.java:2231)
+	at javax.mail.Transport.send(Transport.java:123)
+	at service.EmailHandler.sendEmail(EmailHandler.java:46)
+	at service.EmailHandler.publish(EmailHandler.java:16)
+	at java.logging/java.util.logging.Logger.log(Logger.java:980)
+	at java.logging/java.util.logging.Logger.doLog(Logger.java:1007)
+	at java.logging/java.util.logging.Logger.log(Logger.java:1118)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:36)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:72)
+	at main.Main.run(Main.java:51)
+	at main.Main.main(Main.java:15)
+
+лист. 05, 2024 6:00:09 ПП service.AddTrackCommand execute
+SEVERE: Error adding track
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:26)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:72)
+	at main.Main.run(Main.java:51)
+	at main.Main.main(Main.java:15)
+
+лист. 05, 2024 6:00:10 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.lang.ClassCastException: class com.sun.mail.handlers.text_plain cannot be cast to class javax.activation.DataContentHandler (com.sun.mail.handlers.text_plain and javax.activation.DataContentHandler are in unnamed module of loader 'app')
+	at javax.activation.MailcapCommandMap.getDataContentHandler(MailcapCommandMap.java:596)
+	at javax.activation.MailcapCommandMap.createDataContentHandler(MailcapCommandMap.java:550)
+	at javax.activation.DataHandler.getDataContentHandler(DataHandler.java:611)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:315)
+	at javax.mail.internet.MimeUtility.getEncoding(MimeUtility.java:340)
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1575)
+	at javax.mail.internet.MimeMessage.updateHeaders(MimeMessage.java:2271)
+	at javax.mail.internet.MimeMessage.saveChanges(MimeMessage.java:2231)
+	at javax.mail.Transport.send(Transport.java:123)
+	at service.EmailHandler.sendEmail(EmailHandler.java:46)
+	at service.EmailHandler.publish(EmailHandler.java:16)
+	at java.logging/java.util.logging.Logger.log(Logger.java:980)
+	at java.logging/java.util.logging.Logger.doLog(Logger.java:1007)
+	at java.logging/java.util.logging.Logger.log(Logger.java:1118)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:36)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:72)
+	at main.Main.run(Main.java:51)
+	at main.Main.main(Main.java:15)
+
+лист. 05, 2024 6:01:02 ПП service.AddTrackCommand execute
+SEVERE: Error adding track
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:26)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:72)
+	at main.Main.run(Main.java:51)
+	at main.Main.main(Main.java:15)
+
+лист. 05, 2024 6:01:03 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.lang.ClassCastException: class com.sun.mail.handlers.text_plain cannot be cast to class javax.activation.DataContentHandler (com.sun.mail.handlers.text_plain and javax.activation.DataContentHandler are in unnamed module of loader 'app')
+	at javax.activation.MailcapCommandMap.getDataContentHandler(MailcapCommandMap.java:596)
+	at javax.activation.MailcapCommandMap.createDataContentHandler(MailcapCommandMap.java:550)
+	at javax.activation.DataHandler.getDataContentHandler(DataHandler.java:611)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:315)
+	at javax.mail.internet.MimeUtility.getEncoding(MimeUtility.java:340)
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1575)
+	at javax.mail.internet.MimeMessage.updateHeaders(MimeMessage.java:2271)
+	at javax.mail.internet.MimeMessage.saveChanges(MimeMessage.java:2231)
+	at javax.mail.Transport.send(Transport.java:123)
+	at service.EmailHandler.sendEmail(EmailHandler.java:46)
+	at service.EmailHandler.publish(EmailHandler.java:16)
+	at java.logging/java.util.logging.Logger.log(Logger.java:980)
+	at java.logging/java.util.logging.Logger.doLog(Logger.java:1007)
+	at java.logging/java.util.logging.Logger.log(Logger.java:1118)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:36)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:72)
+	at main.Main.run(Main.java:51)
+	at main.Main.main(Main.java:15)
+
+лист. 05, 2024 6:09:19 ПП service.AddTrackCommand execute
+SEVERE: Error adding track
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:26)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:09:19 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.lang.ClassCastException: class com.sun.mail.handlers.text_plain cannot be cast to class javax.activation.DataContentHandler (com.sun.mail.handlers.text_plain and javax.activation.DataContentHandler are in unnamed module of loader 'app')
+	at javax.activation.MailcapCommandMap.getDataContentHandler(MailcapCommandMap.java:596)
+	at javax.activation.MailcapCommandMap.createDataContentHandler(MailcapCommandMap.java:550)
+	at javax.activation.DataHandler.getDataContentHandler(DataHandler.java:611)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:315)
+	at javax.mail.internet.MimeUtility.getEncoding(MimeUtility.java:340)
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1575)
+	at javax.mail.internet.MimeMessage.updateHeaders(MimeMessage.java:2271)
+	at javax.mail.internet.MimeMessage.saveChanges(MimeMessage.java:2231)
+	at javax.mail.Transport.send(Transport.java:123)
+	at service.EmailHandler.sendEmail(EmailHandler.java:46)
+	at service.EmailHandler.publish(EmailHandler.java:16)
+	at java.logging/java.util.logging.Logger.log(Logger.java:980)
+	at java.logging/java.util.logging.Logger.doLog(Logger.java:1007)
+	at java.logging/java.util.logging.Logger.log(Logger.java:1118)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:36)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:10:44 ПП service.AddTrackCommand execute
+SEVERE: Error adding track
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:26)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:10:44 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.lang.ClassCastException: class com.sun.mail.handlers.text_plain cannot be cast to class javax.activation.DataContentHandler (com.sun.mail.handlers.text_plain and javax.activation.DataContentHandler are in unnamed module of loader 'app')
+	at javax.activation.MailcapCommandMap.getDataContentHandler(MailcapCommandMap.java:596)
+	at javax.activation.MailcapCommandMap.createDataContentHandler(MailcapCommandMap.java:550)
+	at javax.activation.DataHandler.getDataContentHandler(DataHandler.java:611)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:315)
+	at javax.mail.internet.MimeUtility.getEncoding(MimeUtility.java:340)
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1575)
+	at javax.mail.internet.MimeMessage.updateHeaders(MimeMessage.java:2271)
+	at javax.mail.internet.MimeMessage.saveChanges(MimeMessage.java:2231)
+	at javax.mail.Transport.send(Transport.java:123)
+	at service.EmailHandler.sendEmail(EmailHandler.java:46)
+	at service.EmailHandler.publish(EmailHandler.java:16)
+	at java.logging/java.util.logging.Logger.log(Logger.java:980)
+	at java.logging/java.util.logging.Logger.doLog(Logger.java:1007)
+	at java.logging/java.util.logging.Logger.log(Logger.java:1118)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:36)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:11:42 ПП service.AddTrackCommand execute
+SEVERE: Error adding track
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:26)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:11:43 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.lang.ClassCastException: class com.sun.mail.handlers.text_plain cannot be cast to class javax.activation.DataContentHandler (com.sun.mail.handlers.text_plain and javax.activation.DataContentHandler are in unnamed module of loader 'app')
+	at javax.activation.MailcapCommandMap.getDataContentHandler(MailcapCommandMap.java:596)
+	at javax.activation.MailcapCommandMap.createDataContentHandler(MailcapCommandMap.java:550)
+	at javax.activation.DataHandler.getDataContentHandler(DataHandler.java:611)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:315)
+	at javax.mail.internet.MimeUtility.getEncoding(MimeUtility.java:340)
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1575)
+	at javax.mail.internet.MimeMessage.updateHeaders(MimeMessage.java:2271)
+	at javax.mail.internet.MimeMessage.saveChanges(MimeMessage.java:2231)
+	at javax.mail.Transport.send(Transport.java:123)
+	at service.EmailHandler.sendEmail(EmailHandler.java:46)
+	at service.EmailHandler.publish(EmailHandler.java:16)
+	at java.logging/java.util.logging.Logger.log(Logger.java:980)
+	at java.logging/java.util.logging.Logger.doLog(Logger.java:1007)
+	at java.logging/java.util.logging.Logger.log(Logger.java:1118)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:36)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:14:37 ПП service.AddTrackCommand execute
+SEVERE: Error adding track
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:26)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:14:37 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.lang.ClassCastException: class com.sun.mail.handlers.text_plain cannot be cast to class javax.activation.DataContentHandler (com.sun.mail.handlers.text_plain and javax.activation.DataContentHandler are in unnamed module of loader 'app')
+	at javax.activation.MailcapCommandMap.getDataContentHandler(MailcapCommandMap.java:596)
+	at javax.activation.MailcapCommandMap.createDataContentHandler(MailcapCommandMap.java:550)
+	at javax.activation.DataHandler.getDataContentHandler(DataHandler.java:611)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:315)
+	at javax.mail.internet.MimeUtility.getEncoding(MimeUtility.java:340)
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1575)
+	at javax.mail.internet.MimeMessage.updateHeaders(MimeMessage.java:2271)
+	at javax.mail.internet.MimeMessage.saveChanges(MimeMessage.java:2231)
+	at javax.mail.Transport.send(Transport.java:123)
+	at service.EmailHandler.sendEmail(EmailHandler.java:46)
+	at service.EmailHandler.publish(EmailHandler.java:16)
+	at java.logging/java.util.logging.Logger.log(Logger.java:980)
+	at java.logging/java.util.logging.Logger.doLog(Logger.java:1007)
+	at java.logging/java.util.logging.Logger.log(Logger.java:1118)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:36)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:16:54 ПП service.AddTrackCommand execute
+SEVERE: Error adding track
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:26)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:16:54 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.lang.ClassCastException: class com.sun.mail.handlers.text_plain cannot be cast to class javax.activation.DataContentHandler (com.sun.mail.handlers.text_plain and javax.activation.DataContentHandler are in unnamed module of loader 'app')
+	at javax.activation.MailcapCommandMap.getDataContentHandler(MailcapCommandMap.java:596)
+	at javax.activation.MailcapCommandMap.createDataContentHandler(MailcapCommandMap.java:550)
+	at javax.activation.DataHandler.getDataContentHandler(DataHandler.java:611)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:315)
+	at javax.mail.internet.MimeUtility.getEncoding(MimeUtility.java:340)
+	at javax.mail.internet.MimeBodyPart.updateHeaders(MimeBodyPart.java:1575)
+	at javax.mail.internet.MimeMessage.updateHeaders(MimeMessage.java:2271)
+	at javax.mail.internet.MimeMessage.saveChanges(MimeMessage.java:2231)
+	at javax.mail.Transport.send(Transport.java:123)
+	at service.EmailHandler.sendEmail(EmailHandler.java:46)
+	at service.EmailHandler.publish(EmailHandler.java:16)
+	at java.logging/java.util.logging.Logger.log(Logger.java:980)
+	at java.logging/java.util.logging.Logger.doLog(Logger.java:1007)
+	at java.logging/java.util.logging.Logger.log(Logger.java:1118)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:36)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:22:26 ПП service.AddTrackCommand execute
+SEVERE: Error adding track
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:26)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:22:31 ПП main.Main processUserChoice
+INFO: Added a new track.
+лист. 05, 2024 6:22:31 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:22:33 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:22:35 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:22:38 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:22:40 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:24:44 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:24:47 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:24:50 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:26:14 ПП main.Main processUserChoice
+INFO: Attempted to remove a track.
+лист. 05, 2024 6:26:23 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.SearchTracksByDurationCommand.execute(SearchTracksByDurationCommand.java:21)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:85)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:26:26 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:31:36 ПП service.AddTrackCommand execute
+SEVERE: Error adding track
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.AddTrackCommand.execute(AddTrackCommand.java:26)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:73)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:31:40 ПП main.Main processUserChoice
+INFO: Added a new track.
+лист. 05, 2024 6:31:40 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:32:29 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at service.SearchTracksByDurationCommand.execute(SearchTracksByDurationCommand.java:21)
+	at service.CommandManager.runCommand(CommandManager.java:5)
+	at main.Main.processUserChoice(Main.java:85)
+	at main.Main.run(Main.java:52)
+	at main.Main.main(Main.java:16)
+
+лист. 05, 2024 6:32:51 ПП main.Main run
+SEVERE: Unexpected error in main menu
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.Main.run(Main.java:48)
+	at main.Main.main(Main.java:16)
+
+лист. 06, 2024 6:57:09 ПП service.AddTrackCommand execute
+INFO: Track added: track
+лист. 06, 2024 6:57:09 ПП main.Main processUserChoice
+INFO: Added a new track.
+лист. 06, 2024 6:57:26 ПП service.AddTrackCommand execute
+INFO: Track added: owl
+лист. 06, 2024 6:57:26 ПП main.Main processUserChoice
+INFO: Added a new track.
+лист. 06, 2024 6:57:34 ПП main.Main processUserChoice
+INFO: Exited the program.
